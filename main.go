@@ -8,8 +8,6 @@ import (
 	"log"
 	"os"
 	"strings"
-
-	"github.com/KeThichDua/ex1go/other"
 )
 
 type serve struct {
@@ -77,6 +75,6 @@ func main() {
 	fmt.Println("\n	5. In ra địa chỉ item trong slice")
 	listaddress(result)
 
-	other.Run6()
-	other.Run7()
+	Run6()
+	Run7()
 }
