@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/KeThichDua/ex1go/src"
+	"github.com/KeThichDua/ex1go/other"
 )
 
 type serve struct {
@@ -77,7 +77,6 @@ func main() {
 	fmt.Println("\n	5. In ra địa chỉ item trong slice")
 	listaddress(result)
 
-	src.Run6()
-	src.Run7()
-
+	other.Run6()
+	other.Run7()
 }

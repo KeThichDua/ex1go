@@ -1,4 +1,4 @@
-package src
+package other
 
 import (
 	"fmt"
@@ -12,19 +12,19 @@ type User struct {
 	address string
 }
 
-func (u *User) Getname() string {
+func (u *User) GetName() string {
 	return u.name
 }
 
-func (u *User) Getage() int64 {
+func (u *User) GetAge() int64 {
 	return u.age
 }
 
-func (u *User) Getgender() bool {
+func (u *User) GetGender() bool {
 	return u.gender
 }
 
-func (u *User) Getaddress() string {
+func (u *User) GetAddress() string {
 	return u.address
 }
 
@@ -52,7 +52,7 @@ func Run7() {
 	fmt.Println("Slice copy:")
 
 	for _, value := range copyuser {
-		fmt.Print(value.Getname() + " ")
-		fmt.Println(value.Getage())
+		fmt.Print(value.GetName() + " ")
+		fmt.Println(value.GetAge())
 	}
 }
