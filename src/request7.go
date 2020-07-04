@@ -12,19 +12,19 @@ type User struct {
 	address string
 }
 
-func (u *User) getname() string {
+func (u *User) Getname() string {
 	return u.name
 }
 
-func (u *User) getage() int64 {
+func (u *User) Getage() int64 {
 	return u.age
 }
 
-func (u *User) getgender() bool {
+func (u *User) Getgender() bool {
 	return u.gender
 }
 
-func (u *User) getaddress() string {
+func (u *User) Getaddress() string {
 	return u.address
 }
 
@@ -52,7 +52,7 @@ func Run7() {
 	fmt.Println("Slice copy:")
 
 	for _, value := range copyuser {
-		fmt.Print(value.getname() + " ")
-		fmt.Println(value.getage())
+		fmt.Print(value.Getname() + " ")
+		fmt.Println(value.Getage())
 	}
 }
